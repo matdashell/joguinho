@@ -68,7 +68,7 @@ public class Jogo {
                             System.out.println("Pontos restantes para usar >ataque forte<: "+(15-play1.getVigor())+"\n");
                         }
                         if(play1.getVigor() >= 10){
-                            System.out.println("----------->Usar ataque furtivo<-----------\n(possui 50% de chance de deixar o inimigo sem ação por mais 1 round!)\nCustos: 10 pontos\nAtack: 3 \n\n");
+                            System.out.println("----------->Usar ataque furtivo<-----------\n(possui 60% de chance de deixar o inimigo sem ação por mais 1 round!)\nCustos: 10 pontos\nAtack: 3 \n\n");
                         }else{
                             System.out.println("Pontos restantes para usar >ataque furtivo<: \n\n"+(10-play1.getVigor())+"\n\n");
                         }
@@ -176,8 +176,8 @@ public class Jogo {
                             acaoPlayer1 = false;
                             playerPassar = false;
                         }else if(escolha == 2){space();
-                            int numero = gerarNumeroAleatorio(2);
-                            if(numero == 0){
+                            boolean numero = gerarPorcentagem(60);
+                            if(numero == true){
                                 System.out.println("Você recarregou 25 pontos de vigor porém irá ficar 1 round sem ação!\nPRESSIONE ENTER PARA CONTINUAR");
                                 roundSemAcaoPlay1 = 1;
                                 play1.setVigor(play1.getVigor()+25);
