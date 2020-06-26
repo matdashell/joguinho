@@ -298,7 +298,7 @@ public class Jogo {
                     break;}
                 }else{}
                 //--------------------------------------------------------------
-                if(opcao > 5 && opcao <= 8 && play2.getVigor() >= 10 ){
+                if(opcao > 5 && opcao <= 9 && play2.getVigor() >= 10 ){
                     int dano = 7; 
                     System.out.println("O inimigo efetuou um ataque! deseja defende-lo?\n1- SIM\n2- NÃO");
                     int escolha = input.nextInt();
@@ -342,7 +342,7 @@ public class Jogo {
                 break;
                 }else{}
                 
-                if(opcao > 8 && opcao <= 10){
+                if(opcao > 9 && opcao <= 10){
                     resultado = "O player "+play2.getNome()+" recarregou seu vigor em 15 pontos!";
                     play2.setVigor(play2.getVigor()+15);
                   break;}
