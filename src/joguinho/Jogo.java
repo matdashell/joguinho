@@ -235,7 +235,7 @@ public class Jogo {
             System.out.println("Voçê tem direito a mais um round! \nPRESSIONE ENTER PARA CONTINUAR");
             input = new Scanner(System.in);
             pass = input.nextLine();
-            
+            roundSemAcaoPlay2--;
             
         }else{//game do player 2
             space();
