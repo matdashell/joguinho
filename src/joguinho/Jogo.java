@@ -393,15 +393,15 @@ public class Jogo {
         while(acess == 1){space();
         System.out.println("Qual tipo de defesa deseja utilizar?");
         if(vigor >= 1){
-            System.out.println(cont+"- Usar >defesa fraca< (20% de chance de defender)\n");
+            System.out.println(cont+"- Usar >defesa fraca< (20% de chance de defender)\nCusto: 1 ponto\n");
             cont++;
         }
         if(vigor >= 5){
-            System.out.println(cont+"- Usar >defesa média< (40% de chance de defender)\n");
+            System.out.println(cont+"- Usar >defesa média< (40% de chance de defender)\nCusto: 5 pontos\n");
             cont++;
         }
         if(vigor >= 10){
-            System.out.println(cont+"- Usar >defesa forte< (60% de chance de defender)\n");
+            System.out.println(cont+"- Usar >defesa forte< (60% de chance de defender)\nCusto: 10 pontos\n");
         }
         
         acao = input.nextInt();
